@@ -16,25 +16,26 @@
             font-family: 'Roboto', sans-serif;
             text-align: center;
             padding: 20px;
+            overflow-y: auto; /* Permite rolagem no celular */
         }
         .container {
             background-color: #fff;
-            padding: 30px;
+            padding: 20px;
             box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
             border-radius: 15px;
             width: 100%;
-            max-width: 450px;
+            max-width: 400px;
         }
         h1 {
             color: #d6336c;
             font-family: 'Playfair Display', serif;
-            font-size: 5vw;
-            margin-bottom: 20px;
+            font-size: 6vw;
+            margin-bottom: 15px;
             line-height: 1.2;
         }
         .image-box {
-            margin: 20px 0;
-            padding: 10px;
+            margin: 15px 0;
+            padding: 8px;
             border: 2px solid #f7c6d4;
             border-radius: 10px;
             background-color: #fff6f8;
@@ -47,16 +48,16 @@
             border-radius: 8px;
         }
         .buttons {
-            margin-top: 20px;
+            margin-top: 15px;
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 15px;
         }
         .button {
             background-color: #ff6f91;
             border: 2px solid #ff4b5c;
             color: #fff;
-            padding: 12px 20px;
+            padding: 10px 15px;
             font-size: 1rem;
             cursor: pointer;
             border-radius: 10px;
@@ -69,39 +70,43 @@
         }
         #message {
             display: none;
-            margin-top: 20px;
-            font-size: 1.5rem;
+            margin-top: 15px;
+            font-size: 1.3rem;
             color: #28a745;
             font-weight: bold;
             font-family: 'Playfair Display', serif;
         }
         #tiktok-button, #whatsapp-button, #friend-help-button, #persistence-button {
             display: none;
-            margin-top: 20px;
+            margin-top: 15px;
         }
         .extra-option {
-            margin-top: 20px;
+            margin-top: 15px;
         }
         #toggle-whatsapp {
             background-color: transparent;
             border: none;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             color: #007bff;
             cursor: pointer;
             text-decoration: underline;
         }
-
-        /* Media queries para smartphones */
+        /* Ajuste específico para celulares */
         @media (max-width: 600px) {
+            body {
+                height: auto;
+                min-height: 100vh;
+                display: block;
+            }
             h1 {
                 font-size: 7vw;
             }
             .button {
                 font-size: 4vw;
-                padding: 10px 15px;
+                padding: 8px 12px;
             }
             #message {
-                font-size: 5vw;
+                font-size: 4.5vw;
             }
             .buttons {
                 flex-direction: column;
